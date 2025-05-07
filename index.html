@@ -1,49 +1,67 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EcoBook - Inicio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoBook - Inicio</title>
+    <style>
+        /* Basic styling - Replace with your own CSS */
+        body { font-family: sans-serif; }
+        header { background-color: #090de4; padding: 20px; }
+        nav ul { list-style: none; padding: 0; }
+        nav li { display: inline; margin-right: 20px; }
+        main { padding: 20px; }
+        article img { max-width: 100%; height: auto; }
+        section { display: flex; justify-content: space-around; } /* Space around for better card layout */
+        .card { width: 45%; border: 1px solid #1a02a7; padding: 10px; }
+        .card figure { margin-bottom: 10px; }
+        footer { background-color: #c79413; padding: 10px; text-align: center; }
+    </style>
 </head>
 <body>
+    <header>
+        <h1><img src="css/preview.jpg" alt="css/ecobook-logo-f8b7704c-1c56-48b3-8ed5-90b2649e2356.jpg" width="100"> EcoBook</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pages./alojamientos">Alojamientos</a></li>
+                <li><a href="pages./contacto.html">Contacto</a></li>
+                <li><a href="pages./Registro">Registro</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <header>
-    <h1>EcoBook</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="alojamientos.html">Alojamientos</a></li>
-        <li><a href="experiencias.html">Experiencias</a></li>
-        <li><a href="nosotros.html">Nosotros</a></li>
-      </ul>
-    </nav>
-  </header>
+    <main>
+        <article>
+            <h2>Bienvenido a EcoBook</h2>
+            <p>Descubre alojamientos ecológicos y sostenibles en todo el mundo. Reserva tu escapada responsable con nosotros.</p>
+            <img src="ecobook_intro.jpg" alt="EcoBook Introduction Image">
+        </article>
 
-  <main>
-    <article>
-      <h2>Bienvenido a EcoBook</h2>
-      <p>Descubre alojamientos ecológicos y sostenibles en los destinos más increíbles.</p>
-      <img src="imagenes/ecobook-intro.jpg" alt="Paisaje ecológico">
-    </article>
+        <section>
+            <article class="card">  <!-- Using article for semantic meaning -->
+                <h3>Alojamientos Destacados 1</h3>
+                <figure>
+                    <img src="featured1.jpg" alt="Featured Accommodation 1">
+                    <figcaption>Nombre del alojamiento</figcaption>
+                </figure>
+                <p>Breve descripción del alojamiento.</p>
+            </article>
+            <article class="card"> <!-- Using article for semantic meaning -->
+                <h3>Alojamientos Destacados 2</h3>
+                <figure>
+                    <img src="featured2.jpg" alt="Featured Accommodation 2">
+                    <figcaption>Nombre del alojamiento</figcaption>
+                </figure>
+                <p>Breve descripción del alojamiento.</p>
+            </article>
+        </section>
+    </main>
 
-    <section>
-      <h2>Alojamientos Destacados</h2>
-
-      <figure>
-        <img src="imagenes/alojamiento1.jpg" alt="Cabaña en el bosque">
-        <figcaption>Cabaña ecológica en el bosque - Vive una experiencia natural.</figcaption>
-      </figure>
-
-      <figure>
-        <img src="imagenes/alojamiento2.jpg" alt="Casa en la montaña">
-        <figcaption>Casa de montaña sostenible - Comodidad y naturaleza.</figcaption>
-      </figure>
-    </section>
-  </main>
-
-  <footer>
-    <p><a href="contacto.html">Contacto</a> | <a href="registro.html">Registro</a></p>
-  </footer>
-
+    <footer>
+        <p>
+            <a href="#">Contacto</a> | <a href="#">Registro</a>
+        </p>
+    </footer>
 </body>
 </html>
